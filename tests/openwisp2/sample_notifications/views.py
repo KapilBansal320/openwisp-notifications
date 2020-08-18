@@ -3,6 +3,12 @@ You don't need to have this file unless you plan to modify the API views as well
 """
 
 from openwisp_notifications.api.views import (
+    IgnoreObjectNotificationListView as BaseIgnoreObjectNotificationListView,
+)
+from openwisp_notifications.api.views import (
+    IgnoreObjectNotificationView as BaseIgnoreObjectNotificationView,
+)
+from openwisp_notifications.api.views import (
     NotificationDetailView as BaseNotificationDetailView,
 )
 from openwisp_notifications.api.views import (
@@ -44,18 +50,18 @@ class NotificationReadAllView(BaseNotificationReadAllView):
     pass
 
 
-class NotificationSettingView(BaseNotificationSettingView):
+class IgnoreObjectNotificationView(BaseIgnoreObjectNotificationView):
     """
-    Retrives details for a notification setting and provides
-    endpoints for updating and deleting them.
+    Retrives details for a IgnoreNotificationObject object and
+    provides enpoints for updating and deleting it.
     """
 
     pass
 
 
-class NotificationSettingListView(BaseNotificationSettingListView):
+class IgnoreObjectNotificationListView(BaseIgnoreObjectNotificationListView):
     """
-    Lists user's notification settings.
+    Lists user's IgnoreObjectNotification objects.
     """
 
     pass
