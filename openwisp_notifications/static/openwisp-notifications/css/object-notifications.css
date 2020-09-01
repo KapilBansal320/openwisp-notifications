@@ -1,5 +1,5 @@
 .ow-icon {
-  width: 16px;
+  width: 12px;
   height: 16px;
   background-repeat: no-repeat;
 }
@@ -19,6 +19,10 @@
   background: #999;
   margin: auto 0px auto auto;
   width: fit-content;
+}
+.ow-object-notify:active,
+.ow-object-notify:focus{
+  outline: 0 none;
 }
 .ow-object-notify .ow-icon{
   margin: 5px 5px 5px 0px;
@@ -47,9 +51,12 @@
   width: 100%;
   border: none;
 }
-.ow-notification-option:hover {
+.ow-notification-option:hover,
+.ow-notification-option:focus,
+.ow-notification-option:active {
   background-color: #515151;
   color: #fff;
+  outline: 0 none;
 }
 .ow-object-notification-option-container p,
 .ow-notification-option {
@@ -75,7 +82,7 @@
   background-image: url('/static/openwisp-notifications/images/icons/icon-bell.svg');
 }
 .ow-object-notify-slash-bell {
-  width: 19px;
+  width: 17px;
   background-image: url('/static/openwisp-notifications/images/icons/icon-bell-slash.svg');
 }
 
